@@ -87,8 +87,24 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
 }   
-
-@media (max-width: 800px) {
+@media screen and (min-width: 320px) {
+    .banner h1 {
+        font-size: 30px;
+    }
+    .container 
+    {
+        width: 300px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .banner h1 {
+        font-size: 34px;
+    }
+    .container {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 800px) {
     .banner h1 {
         font-size: 38px;
     }
@@ -103,24 +119,7 @@ a:hover {
     }
 }
 
-@media (min-width: 500px) {
-    .banner h1 {
-        font-size: 34px;
-    }
-    .container {
-        width: 400px;
-    }
-}
-@media screen and (min-width: 320px) {
-    .banner h1 {
-        font-size: 30px;
-    }
-    .container 
-    {
-        width: 300px;
-    }
-}
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
     .banner h1 {
         font-size: 45px;
     }
@@ -129,4 +128,6 @@ a:hover {
         width: 800px;
     }
 }
+  
+  
   
