@@ -1,58 +1,48 @@
-body
-{
+body {
     background-color: gray;
     font-size: 18px;
     font-family: 'Indie Flower', cursive;
     margin: 0px;
 }
-h1, h2, h3 
-{
+h1, h2, h3 {
     color: #404042;
     font-family: Chivo;
 }
   
-p 
-{
+p {
     color: #404042;
     opacity: .7;
 }
-a
-{
+a {
     color: white;
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
 }
-a:hover 
-{
+a:hover {
     background-color: red;
 }
-.container 
-{
+.container {
     width: 800px;
     margin: auto;
 }
-.banner 
-{
+.banner {
     background-image: url('../img/background.jpg');
     background-size: cover;
     background-position: center;
     padding: 150px 0;
     text-align: center;
 }
-.banner h1 
-{
+.banner h1 {
     color: white;
     font-size: 45px;
     margin: 0;
 }
-.banner p 
-{
+.banner p {
     color: white;
     font-size: 24px;
 }
-.btn-blue 
-{
+.btn-blue {
     background-color: #1A48E3;
     color: white;
     padding: 16px 48px;
@@ -66,8 +56,7 @@ a:hover
     color: white;
   }
   
-.card-white 
-{
+.card-white {
     background: white;
     box-shadow: 0 0 16px rgba(0,0,0,0.1);
     border-radius: 4px;
@@ -76,67 +65,68 @@ a:hover
     padding: 24px;
     margin: 8px;
 }
-.card-white img 
-{
+.card-white img {
     width: 180px;
     height: 180px;
     object-fit: cover;
     border-radius: 4px;
 }
-.card-white h3 
-{
+.card-white h3 {
     margin-bottom: 0;
 }
-.footer 
-{
+.footer {
     background: #404042;
     text-align: center;
     padding: 24px 0;
 }
-.footer p 
-{
+.footer p {
     color: white;
 }
-.cards 
-{
+.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
-}
+}   
 
-@media (max-width: 800px) 
-{
-.cards 
-{
-      grid-template-columns: 1fr;
-}
-.card-white 
-{
-    width: auto;
-}
-}
-
-@media (min-width: 500px) 
-{
-.container 
-{
-    width: 400px;
-}
-}
-@media (min-width: 800px) 
-{
-.container 
-{
+@media (max-width: 800px) {
+    .banner h1 {
+        font-size: 38px;
+    }
+    .container {
     width: 600px;
+    }
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    .card-white {
+    width: auto;
+    }
 }
+
+@media (min-width: 500px) {
+    .banner h1 {
+        font-size: 34px;
+    }
+    .container {
+        width: 400px;
+    }
 }
-@media (min-width: 1000px) 
-{
-.container 
-{
-      width: 800px;
+@media screen and (min-width: 320px) {
+    .banner h1 {
+        font-size: 30px;
+    }
+    .container 
+    {
+        width: 300px;
+    }
 }
+@media (min-width: 1000px) {
+    .banner h1 {
+        font-size: 45px;
+    }
+    .container 
+    {
+        width: 800px;
+    }
 }
-  
-  
   
